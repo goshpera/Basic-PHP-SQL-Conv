@@ -12,16 +12,21 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO people(name)
-VALUES (?)";
+$sql = "INSERT INTO people(id, name)
+VALUES (?, ?)";
 
 $filename = 'example.json';
 $json = file_get_contents($filename);
 $data = json_decode($josndata);
-$singledata = $data->people->name;
 
+foreach($data as $key => $value) {
+  $key->$data->'people'->'id';
+  $value->$data->'people'->'name';
+
+  mysqli_stmt_execute($sql);
+}
 if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
+  echo "New records created successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
