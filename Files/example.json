@@ -1,0 +1,57 @@
+{
+    "people": [
+        {
+            "id": 1,
+            "name": "George"
+          },
+          {
+            "id": 2,
+            "name": "John"
+          },
+          {
+            "id": 3,
+            "name": "Mark"
+          },
+          {
+            "id": 4,
+            "name": "Nate"
+          }
+    ],
+    "address": [
+        {
+            "id": 1,
+            "parent_id": 0,
+            "name": "Plovdiv"
+        }, 
+        {
+            "id": 2,
+            "parent_id": 0,
+            "name": "Sofia"
+        },
+        {
+            "id": 3,
+            "parent_id": 0,
+            "name": "Varna"
+        }, 
+        {
+            "id": 4,
+            "parent_id": 0,
+            "name": "Burgas"
+        },
+        {
+            "id": 5,
+            "parent_id": 2,
+            "name": "Sofia-region"
+        }
+    ],
+    "fruits":[
+        {
+            "id": 1,
+            "type": "Apple"
+        },
+        {
+            "id": 2,
+            "type": "Orange"
+        }
+        ] 
+}
